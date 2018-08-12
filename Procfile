@@ -1,1 +1,1 @@
-web: lein ring server-headless $PORT
+web: java $JVM_OPTS -cp target/gamesdb-api.jar clojure.main -m gamesdb-api.core
