@@ -3,7 +3,7 @@
             [korma.core :refer :all]))
 
 (defdb gamesdb
-  (postgres :credentials))
+  (postgres :connection))
 
 (defentity game
   (pk :id)
@@ -11,3 +11,6 @@
 
 (defn get-all []
   (select game (order :platform) (order :title)))
+
+(defn get-by-id [id]
+  (select game (where {:id (Integer/parseInt id)})))
