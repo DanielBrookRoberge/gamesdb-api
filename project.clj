@@ -5,6 +5,8 @@
 
   :plugins [[lein-ring "0.12.2"]]
   :ring {:handler gamesdb-api.core/handler}
+  :profiles {:uberjar {:aot :all}}
+  :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [liberator "0.15.2"]
                  [compojure "1.6.0"]
