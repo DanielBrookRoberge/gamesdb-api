@@ -3,7 +3,8 @@
             [korma.core :refer :all]))
 
 (defdb gamesdb
-  (postgres {:connection-uri (System/getenv "JDBC_DATABASE_URL")}))
+  (postgres {:connection-uri (System/getenv "JDBC_DATABASE_URL")
+             :sslmode "require"}))
 
 (defentity game
   (pk :id)
