@@ -1,4 +1,5 @@
 (ns gamesdb-api.core
+  (:gen-class)
   (:require [liberator.core :refer [resource defresource]]
             [ring.middleware.params :refer [wrap-params]]
             [ring.middleware.cors :refer [wrap-cors]]

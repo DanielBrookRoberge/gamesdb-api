@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/gamesdb-api.jar clojure.main -m gamesdb-api.core
+web: java $JVM_OPTS -jar target/gamesdb-api.jar
