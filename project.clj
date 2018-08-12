@@ -14,4 +14,4 @@
                  [ring/ring-core "1.6.3"]
                  [jumblerg/ring.middleware.cors "1.0.1"]
                  [org.postgresql/postgresql "42.2.4"]
-                 [korma "0.4.3"]])
+                 [korma "0.5.0-RC1"]])
