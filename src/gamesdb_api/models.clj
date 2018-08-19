@@ -13,4 +13,8 @@
   (select game (order :platform) (order :title)))
 
 (defn get-by-id [id]
-  (select game (where {:id (Integer/parseInt id)})))
+  (-> (select game (where {:id (Integer/parseInt id)}))
+      (get 0 nil)))
+
+(defn add-game [details]
+  (insert (values details)))
